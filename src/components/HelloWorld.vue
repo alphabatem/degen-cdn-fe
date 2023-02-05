@@ -6,7 +6,9 @@
 
 
 		<div class="text-center">
-			<input placeholder="Search Token Mint" class="form-control">
+			<form @submit="onSearch">
+				<input v-model="search" placeholder="Search Token Mint" class="form-control">
+			</form>
 		</div>
 
 		<h3>Ecosystem</h3>
@@ -19,6 +21,17 @@
 <script>
 export default {
 	name: 'HelloWorld',
+	data() {
+		return {
+			search: ""
+		}
+	},
+	methods:{
+		onSearch: function(e) {
+			e.preventDefault()
+			this.$router.push(`/search/${this.search}`)
+		}
+	}
 }
 </script>
 
