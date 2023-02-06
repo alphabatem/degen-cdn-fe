@@ -137,11 +137,6 @@ input {
 	margin-top: 5%;
 }
 
-.container {
-	width: 60%;
-	margin: auto;
-}
-
 .text-center {
 	text-align: center;
 }

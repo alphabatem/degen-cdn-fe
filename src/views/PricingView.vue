@@ -1,10 +1,10 @@
 <template>
-	<div class="container">
+	<div class="container mb-5">
 		<h1 class="">Pricing</h1>
 
 
 		<div class="row mt-4">
-			<div class="col-4">
+			<div class="col-sm-12 col-lg-4 mb-3 mb-lg-0">
 				<div class="card h-100">
 					<div class="card-header">
 						<h3>FREE</h3>
@@ -21,7 +21,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-sm-12 col-lg-4 mb-3 mb-lg-0">
 				<div class="card h-100">
 					<div class="card-header">
 						<h3>BUILDER</h3>
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-sm-12 col-lg-4 mb-3 mb-lg-0">
 				<div class="card h-100">
 					<div class="card-header">
 						<h3>ENTERPRISE</h3>
