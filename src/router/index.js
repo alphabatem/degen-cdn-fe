@@ -5,22 +5,27 @@ import HomeView from '../views/HomeView.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/search/:id',
-    name: 'search',
-    component: () => import(/* webpackChunkName: "search" */ '../views/SearchView.vue')
-  }
+	{
+		path: '/',
+		name: 'home',
+		component: HomeView
+	},
+	{
+		path: '/search/:id',
+		name: 'search',
+		component: () => import(/* webpackChunkName: "search" */ '../views/SearchView.vue')
+	},
+	{
+		path: '/pricing',
+		name: 'pricing',
+		component: () => import(/* webpackChunkName: "pricing" */ '../views/PricingView')
+	}
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+	mode: 'history',
+	base: process.env.BASE_URL,
+	routes
 })
 
 export default router

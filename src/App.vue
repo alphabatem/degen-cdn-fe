@@ -3,9 +3,12 @@
 		<nav>
 			<router-link to="/">Home</router-link>
 			|
-			<router-link to="/about">Docs</router-link>
+			<router-link to="/pricing">Pricing</router-link>
+			|
+			<a href="https://api.degencdn.com/swagger/index.html" target="_blank">Docs</a>
 		</nav>
 		<router-view/>
+		<Footer></Footer>
 	</div>
 </template>
 
@@ -24,7 +27,7 @@ nav {
 
 nav a {
 	font-weight: bold;
-	color: #2c3e50;
+	color: white;
 }
 
 nav a.router-link-exact-active {
@@ -42,9 +45,15 @@ html, body {
 	color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, i {
 	font-family: 'Inter', serif;
 	color: white;
 }
 
 </style>
+<script>
+import Footer from "@/Footer";
+export default {
+	components: {Footer}
+}
+</script>

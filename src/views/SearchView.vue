@@ -26,6 +26,7 @@
 					<img id="preview-img" alt="" :src="previewLink" class="img-fluid loading" @load="toggleImageLoading">
 				</div>
 				<div class=" mt-2" v-if="media.imageType !== 'gif'">
+					<router-link to="/" class="btn btn-outline-light me-3">Back</router-link>
 					<button @click="toggleOriginal" class="btn btn-outline-light">Original</button>
 				</div>
 			</div>
